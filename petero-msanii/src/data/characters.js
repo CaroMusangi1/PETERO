@@ -3,7 +3,7 @@ const characters = [
   {
     name: "Inyaa Mwende",
     description: "A bold and expressive character bringing humor and real-life storytelling.",
-    images: ["/characters/inyaa1.jpeg", "/characters/inyaa2.jpeg", "/characters/inyaa3.jpeg"],
+    images: ["/characters/inyaa1.jpeg", "/characters/inyaa3.jpeg"],
   },
   {
     name: "Petero",
