@@ -45,7 +45,7 @@ const characters = [
     type: "brand",
     name: "Lil G Barbers and Spa",
     description: "Official Brand Ambassador for Lil G Barbers and Spa.",
-    images: ["/characters/spa1.jpeg", "/characters/spag2.jpeg"],
+    images: ["/characters/spa1.jpeg","/characters/spa2.jpeg","/characters/spa3.jpeg"],
   },
   {
     type: "brand",
@@ -90,7 +90,7 @@ const characters = [
   {
     type: "collaboration",
     name: "Move",
-    description: "Creative collaboration project bringing entertainment and storytelling together.",
+    description: "Creative collaboration featuring Wilberforce Musyoka.",
     images: ["/characters/move1.jpeg", "/characters/move2.jpeg"],
   },
   {
@@ -101,7 +101,7 @@ const characters = [
   },
   {
     type: "collaboration",
-    name: "Kay",
+    name: "John Kay",
     description: "Content creation partnership delivering engaging and creative productions.",
     images: ["/characters/kay1.jpeg", "/characters/kay2.jpeg"],
   },
