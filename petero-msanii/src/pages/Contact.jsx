@@ -1,5 +1,3 @@
-// src/pages/Contact.jsx
-
 import { useState, useRef } from "react";
 import Header from "../components/ui/Header";
 import Footer from "../components/ui/Footer";
