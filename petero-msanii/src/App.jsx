@@ -3,7 +3,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Achievements from "./pages/Achievements";
 import BrandAmbassador from "./pages/BrandAmbassador";
-import MasterOfCeremonies from "./pages/MasterOfCeremonies";
+import MasterOfCeremonies from "./pages/MasterofCeremonies";
 import Collaborations from "./pages/Collaborations";
 import RateCard from "./pages/RateCard";
 import Contact from "./pages/Contact";
