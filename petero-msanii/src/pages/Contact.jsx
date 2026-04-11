@@ -7,11 +7,9 @@ import Carousel from "../components/media/Carousel";
 import characters from "../data/characters";
 import emailjs from "@emailjs/browser";
 
-// 🔑 REPLACE THESE WITH YOUR EMAILJS KEYS
-const SERVICE_ID = "service_3gtox3h";
-const TEMPLATE_ID = "template_12jgb4f";
-const PUBLIC_KEY = "EzElOBUxQTpHipax-";
-
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 // Initial form state
 const INITIAL = {
   from_name: "",

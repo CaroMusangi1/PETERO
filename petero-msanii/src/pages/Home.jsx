@@ -52,7 +52,7 @@ function Home() {
 
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/@peteromsanii"
+            href="https://www.facebook.com/@PeteroMsanii"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center"
