@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd petero-msanii && npm install && npm run build",
-  "outputDirectory": "petero-msanii/dist",
-  "installCommand": "cd petero-msanii && npm install"
-}
