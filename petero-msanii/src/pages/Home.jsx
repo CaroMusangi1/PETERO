@@ -14,11 +14,11 @@ function Home() {
       {/* HEADER */}
       <Header />
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <HeroSection />
 
-      {/* TRENDING BUTTON (FIXED SPACING) */}
-      <div className="flex justify-center -mt-10 sm:-mt-6">
+      {/* TRENDING BUTTON (FIXED NO OVERLAP) */}
+      <div className="w-full flex justify-center py-8">
         <Link
           to="/achievements#kiithio"
           className="bg-gold text-black px-6 py-3 rounded-full font-semibold text-base
@@ -28,48 +28,45 @@ function Home() {
         </Link>
       </div>
 
-      {/* SOCIAL MEDIA SECTION */}
-      <section className="pt-10 sm:pt-16 pb-6 text-center px-4">
+      {/* SOCIAL MEDIA */}
+      <section className="pt-10 pb-6 text-center px-4">
         <h2 className="text-3xl font-bold text-gold mb-8">
           Connect With Petero
         </h2>
 
         <div className="flex flex-wrap justify-center gap-8 items-center">
 
-          {/* YouTube */}
           <a
             href="https://www.youtube.com/@peteromsanii"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center"
           >
-            <div className="bg-navy p-5 rounded-full hover:shadow-lg hover:shadow-gold transition duration-300">
+            <div className="bg-navy p-5 rounded-full">
               <FaYoutube size={28} />
             </div>
             <span className="text-sm mt-2 text-gray-300">YouTube</span>
           </a>
 
-          {/* Facebook */}
           <a
             href="https://www.facebook.com/@PeteroMsanii"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center"
           >
-            <div className="bg-navy p-5 rounded-full hover:shadow-lg hover:shadow-gold transition duration-300">
+            <div className="bg-navy p-5 rounded-full">
               <FaFacebook size={28} />
             </div>
             <span className="text-sm mt-2 text-gray-300">Facebook</span>
           </a>
 
-          {/* TikTok */}
           <a
             href="https://www.tiktok.com/@peteromsanii1"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center"
           >
-            <div className="bg-navy p-5 rounded-full hover:shadow-lg hover:shadow-gold transition duration-300">
+            <div className="bg-navy p-5 rounded-full">
               <FaTiktok size={28} />
             </div>
             <span className="text-sm mt-2 text-gray-300">TikTok</span>
@@ -82,15 +79,13 @@ function Home() {
         </div>
       </section>
 
-      {/* CHARACTERS SECTION (FIXED TOP SPACING) */}
-      <section className="pt-2 sm:pt-6 pb-16 px-4 md:px-6">
-
+      {/* CHARACTERS */}
+      <section className="pt-10 pb-16 px-4 md:px-6">
         <h2 className="text-3xl font-bold text-gold text-center mb-10">
           Characters
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-
           {homeCharacters.map((char, index) => (
             <div
               key={index}
@@ -107,7 +102,6 @@ function Home() {
               <Carousel images={char.images} />
             </div>
           ))}
-
         </div>
       </section>
 
