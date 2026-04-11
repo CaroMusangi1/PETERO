@@ -8,9 +8,9 @@ import characters from "../data/characters";
 import emailjs from "@emailjs/browser";
 
 // 🔑 REPLACE THESE WITH YOUR EMAILJS KEYS
-const SERVICE_ID = "YOUR_SERVICE_ID";
-const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const SERVICE_ID = "service_3gtox3h";
+const TEMPLATE_ID = "template_12jgb4f";
+const PUBLIC_KEY = "EzElOBUxQTpHipax-";
 
 // Initial form state
 const INITIAL = {
