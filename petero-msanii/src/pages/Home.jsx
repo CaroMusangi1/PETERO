@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import characters from "../data/characters";
 
 function Home() {
-  // Homepage characters
   const homeCharacters = characters.filter(c => c.type === "character");
 
   return (
@@ -18,19 +17,19 @@ function Home() {
       {/* HERO SECTION */}
       <HeroSection />
 
-      {/* TRENDING BUTTON */}
-      <div className="flex justify-center mt-6">
+      {/* TRENDING BUTTON (FIXED SPACING) */}
+      <div className="flex justify-center -mt-10 sm:-mt-6">
         <Link
           to="/achievements#kiithio"
           className="bg-gold text-black px-6 py-3 rounded-full font-semibold text-base
                      hover:scale-105 hover:shadow-lg hover:shadow-gold transition duration-300"
         >
-          Click to See Trending 
+          Click to See Trending
         </Link>
       </div>
 
       {/* SOCIAL MEDIA SECTION */}
-      <section className="pt-16 pb-6 text-center px-4">
+      <section className="pt-10 sm:pt-16 pb-6 text-center px-4">
         <h2 className="text-3xl font-bold text-gold mb-8">
           Connect With Petero
         </h2>
@@ -83,23 +82,32 @@ function Home() {
         </div>
       </section>
 
-      {/* CHARACTERS SECTION */}
-      <section className="pt-6 pb-16 px-4 md:px-6">
+      {/* CHARACTERS SECTION (FIXED TOP SPACING) */}
+      <section className="pt-2 sm:pt-6 pb-16 px-4 md:px-6">
+
         <h2 className="text-3xl font-bold text-gold text-center mb-10">
           Characters
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
           {homeCharacters.map((char, index) => (
             <div
               key={index}
               className="bg-navy p-4 rounded-lg shadow-lg hover:scale-105 transition duration-300"
             >
-              <h3 className="text-xl font-bold text-gold mb-2">{char.name}</h3>
-              <p className="text-gray-300 text-sm mb-3">{char.description}</p>
+              <h3 className="text-xl font-bold text-gold mb-2">
+                {char.name}
+              </h3>
+
+              <p className="text-gray-300 text-sm mb-3">
+                {char.description}
+              </p>
+
               <Carousel images={char.images} />
             </div>
           ))}
+
         </div>
       </section>
 
